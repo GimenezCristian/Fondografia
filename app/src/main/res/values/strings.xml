@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Fondografia</string>
+
+    <string name="desarrollador">Desarrollado por: Cristian Gimenez</string>
 </resources>
