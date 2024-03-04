@@ -2,4 +2,11 @@
     <string name="app_name">Fondografia</string>
 
     <string name="desarrollador">Desarrollado por: Cristian Gimenez</string>
+    
+    <!--MENU ADMIN-->
+    <string name="InicioAdmin">Inicio</string>
+    <string name="PerfilAdmin">Perfil</string>
+    <string name="RegistrarAdmin">Registrar</string>
+    <string name="ListarAdmin">Lista de administradores</string>
+    <string name="Salir">Cerrar sesion</string>
 </resources>

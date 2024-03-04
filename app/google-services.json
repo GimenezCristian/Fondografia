@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "865248020850",
+    "project_id": "fondografia-d53ea",
+    "storage_bucket": "fondografia-d53ea.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:865248020850:android:9f366c9fe1b0796be4b5eb",
+        "android_client_info": {
+          "package_name": "com.cristiangimenez.fondografia"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAia0uFlcHKXAApHidpqaSnlejwNWzVleE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
