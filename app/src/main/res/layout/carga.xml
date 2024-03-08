@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#086A87"
+    android:background="#0B0B61"
     tools:context=".Carga">
 
     <androidx.appcompat.widget.LinearLayoutCompat
@@ -36,7 +36,7 @@
         <TextView
             android:id="@+id/desarrollador"
             android:text="@string/desarrollador"
-            android:textSize="18sp"
+            android:textSize="20sp"
             android:textColor="#fff"
             android:gravity="center"
             android:layout_marginTop="10dp"
