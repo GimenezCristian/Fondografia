@@ -1,13 +1,14 @@
 {
   "project_info": {
-    "project_number": "865248020850",
-    "project_id": "fondografia-d53ea",
-    "storage_bucket": "fondografia-d53ea.appspot.com"
+    "project_number": "104885085303",
+    "firebase_url": "https://fondos-de-pantalla-9edc7-default-rtdb.firebaseio.com",
+    "project_id": "fondos-de-pantalla-9edc7",
+    "storage_bucket": "fondos-de-pantalla-9edc7.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:865248020850:android:9f366c9fe1b0796be4b5eb",
+        "mobilesdk_app_id": "1:104885085303:android:b12c2dd3a7fd881cac9272",
         "android_client_info": {
           "package_name": "com.cristiangimenez.fondografia"
         }
@@ -15,7 +16,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyAia0uFlcHKXAApHidpqaSnlejwNWzVleE"
+          "current_key": "AIzaSyCNkMNvrMg994fh1ZDMHfFAx4TpO5Z2cfk"
         }
       ],
       "services": {

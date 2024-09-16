@@ -7,6 +7,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.Toast;
@@ -16,10 +17,14 @@ import com.cristiangimenez.fondografia.FragmentosAdministrador.ListaAdmin;
 import com.cristiangimenez.fondografia.FragmentosAdministrador.PerfilAdmin;
 import com.cristiangimenez.fondografia.FragmentosAdministrador.RegistrarAdmin;
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivityAdministrador extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     DrawerLayout drawerLayout;
+    FirebaseAuth firebaseAuth;
+    FirebaseUser user;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +44,9 @@ public class MainActivityAdministrador extends AppCompatActivity implements Navi
 
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
+
+        firebaseAuth= FirebaseAuth.getInstance();
+        user= firebaseAuth.getCurrentUser();
 
 
         //Fragmento por defecto
@@ -71,9 +79,34 @@ public class MainActivityAdministrador extends AppCompatActivity implements Navi
                     new ListaAdmin()).commit();
         }
         if(item.getItemId() == R.id.Salir){
-            Toast.makeText(MainActivityAdministrador.this, "Cerraste sesión exitosamente", Toast.LENGTH_SHORT).show();
+            CerrarSesion();
         }
         drawerLayout.closeDrawer(GravityCompat.START);
         return super.onOptionsItemSelected(item);
         }
+
+
+    private void ComprobandoInicioSesion (){
+        if (user!=null){
+            //Si el administrador a iniciado sesion
+            Toast.makeText(this, "Se ha iniciado sesion", Toast.LENGTH_SHORT).show();
+        }else {
+            //Si no se ha iniciado sesion es porque el usuario es un cliente
+            startActivity(new Intent(MainActivityAdministrador.this, MainActivity.class));
+            finish();
+        }
     }
+
+    private void CerrarSesion(){
+        firebaseAuth.signOut();
+        startActivity(new Intent(MainActivityAdministrador.this, MainActivity.class));
+        Toast.makeText(this, "Cerraste sesion exitosamente", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    protected void onStart() {
+        ComprobandoInicioSesion();
+        super.onStart();
+    }
+}
+

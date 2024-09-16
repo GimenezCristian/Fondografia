@@ -33,7 +33,9 @@
     <string name="Password">Contraseña</string>
     <string name="Nombres">Nombres completos</string>
     <string name="Apellidos">Apellidos completos</string>
-    <string name="Edad">Apellidos completos</string>
+    <string name="Edad">Edad</string>
+    <string name="FechaRegistro">Fecha de registro</string>
+    <string name="Registrar">Registrar</string>
 
 
     <!-- TODO: Remove or change this placeholder text -->
