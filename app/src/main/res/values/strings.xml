@@ -17,7 +17,6 @@
     <string name="Salir">Cerrar sesion</string>
 
 
-
     <!--MENU CLIENTE-->
     <string name="Opcionestxt">Opciones</string>
     <string name="InicioCliente">Inicio</string>
@@ -25,6 +24,7 @@
     <string name="MasOpcionestxt">Más opciones</string>
     <string name="AcercaDe">Acerca De</string>
     <string name="Compartir">Compartir</string>
+    <string name="Acceder">Acceder</string>
 
 
     <!--- REGISTRO DE ADMINISTRADORES-->
@@ -36,6 +36,10 @@
     <string name="Edad">Edad</string>
     <string name="FechaRegistro">Fecha de registro</string>
     <string name="Registrar">Registrar</string>
+
+    <!--- LOGIN DE ADMINISTRADORES-->
+    <string name="LoginTXT">Login de administradores</string>
+    <string name="Ingresar">Ingresar</string>
 
 
     <!-- TODO: Remove or change this placeholder text -->
